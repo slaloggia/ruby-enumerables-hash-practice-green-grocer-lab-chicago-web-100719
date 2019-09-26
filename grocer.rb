@@ -50,7 +50,7 @@ def checkout(cart, coupons)
   
   total = 0 
   
-  cart.each{|item, attributes|
+  clearance_cart.each{|item, attributes|
     total += attributes[:price] * attributes[:count]
   }
    return total
