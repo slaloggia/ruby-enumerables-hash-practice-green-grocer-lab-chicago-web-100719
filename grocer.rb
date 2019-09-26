@@ -37,6 +37,7 @@ def apply_clearance(cart)
       |name, attributes|
       if name[:clearance] == true 
         name[:price] = (name[:price] * 0.8).round
+      end
     end
   }
 end
