@@ -35,8 +35,8 @@ def apply_clearance(cart)
   cart.map{
     |item| item.each do
       |name, attributes|
-      if cart[name][:clearance] == true 
-        cart[name][:price] = cart[name][:price] * 0.80
+      if name[:clearance == true 
+        name[:price] = name[:price] 
       end
     end
   }
