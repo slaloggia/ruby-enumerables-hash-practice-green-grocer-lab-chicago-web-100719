@@ -48,7 +48,7 @@ def checkout(cart, coupons)
   apply_coupons
   apply_clearance
   
-  total = cart.reduce{
+  
   
   
 end
