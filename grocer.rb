@@ -7,7 +7,8 @@ def consolidate_cart(cart)
     cart_hash[item][:count] = 1 
   end
   }
-return cart_hash
+  cart = cart_hash
+return cart
 
 end
 
@@ -43,5 +44,11 @@ end
 
 
 def checkout(cart, coupons)
-  # code here
+  consolidate_cart
+  apply_coupons
+  apply_clearance
+  
+  total = cart.reduce{
+  
+  
 end
